@@ -5,7 +5,7 @@ provider aws{
 resource "aws_instance" "myec2" {
   
     ami = data.aws_ami.example.id
-    instance_type = "t2.micro"
+    instance_type = "t2.nano"
 }
 
 data "aws_ami" "example" {
